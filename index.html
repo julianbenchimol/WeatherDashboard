@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Default Head Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Bootstrap Stylesheet Connection -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+		<!-- JQuery UI Stylesheet Connection -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+		<!-- Default Stylesheet Connection -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Insert Title Here</title>
+  </head>
+
+  <body>
+	<header>
+		<div class="jumbotron">
+			<div class = "row">
+				<div class="col-8">
+					<h1 class="display-4">Weather Dashboard</h1>
+					<div class = "lead" id = "current-day">Insert Current Day</div> 
+				</div>
+				<div class="col-4">
+					<div class="form-group">
+						<label for="exampleInputEmail1" class = "h2">Search Location:</label>
+						<input type="text" class="form-control" id="location-input" aria-describedby="locationInput" placeholder="Ex: New York">
+						<button type="button" class = "btn btn-primary mt-2" id = "search-button"> Search
+					</div>
+				</div>
+			</div>
+		  </div>
+	</header>
+
+	<!--TODO: Use cards to display the forcast-->
+	<!--TODO: Need Current forcast for the location-->
+	<div class = "container">
+		<div class = "row ">
+			<div class = "col-8 border">
+				<h4>Current Weather:</h4>
+			</div>
+			<div class = "col-4">
+				<h4>Recently Searched:</h4>
+			</div>
+	</div>
+
+        <!-- JQuery Connection -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+		<!-- Bootstrap JS connection -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+		<!-- JQuery UI Script Connection -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+		<!-- Moment Connection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
