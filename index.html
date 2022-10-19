@@ -9,13 +9,13 @@
 		<!-- JQuery UI Stylesheet Connection -->
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
 		<!-- Default Stylesheet Connection -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Insert Title Here</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <title>Weather Dashboard</title>
   </head>
 
   <body>
 	<header>
-		<div class="jumbotron">
+		<div class="jumbotron bg-info">
 			<div class = "row">
 				<div class="col-8">
 					<h1 class="display-4">Weather Dashboard</h1>
@@ -23,7 +23,7 @@
 				</div>
 				<div class="col-4">
 					<div class="form-group">
-						<label for="exampleInputEmail1" class = "h2">Search Location:</label>
+						<label for="location-input" class = "h2">Search Location:</label>
 						<input type="text" class="form-control" id="location-input" aria-describedby="locationInput" placeholder="Ex: New York">
 						<button type="button" class = "btn btn-primary mt-2" id = "search-button"> Search
 					</div>
@@ -32,17 +32,63 @@
 		  </div>
 	</header>
 
-	<!--TODO: Use cards to display the forcast-->
-	<!--TODO: Need Current forcast for the location-->
-	<div class = "container">
-		<div class = "row ">
-			<div class = "col-8 border">
-				<h4>Current Weather:</h4>
-			</div>
-			<div class = "col-4">
-				<h4>Recently Searched:</h4>
-			</div>
+	<!--Current Weather-->
+	<div class = "container mb-3 py-3 border w-100">
+		<div class = "h3 text-center">Current Weather: </div>
+		<div class = "lead">Temperature:</div>
+		<div class = "lead">Wind Speed:</div>
+		<div class = "lead">Humidity:</div>
 	</div>
+
+
+	<!--Three Day Forcast Cards-->
+	<div class="card-group mx-5">
+		<div class="card" id = "day-one">
+		  <div class="card-body" id = "day-two">
+			<h5 class="card-title">Date 1</h5>
+			<p class="card-text" id = "day-one-date">Forcast for day 1</p>
+			<div class = "lead">Temperature:</div>
+			<div class = "lead">Wind Speed:</div>
+			<div class = "lead">Humidity:</div>
+		  </div>
+		</div>
+		<div class="card" id = "day-two">
+		  <div class="card-body">
+			<h5 class="card-title" id = "day-two-date">Date 2</h5>
+			<p class="card-text">Forcast for Day 2</p>
+			<div class = "lead">Temperature:</div>
+			<div class = "lead">Wind Speed:</div>
+			<div class = "lead">Humidity:</div>
+		  </div>
+		</div>
+		<div class="card" id = "day-three">
+		  <div class="card-body">
+			<h5 class="card-title" id = "day-three-date">Date Three</h5>
+			<p class="card-text">Forcast for Day Three</p>
+			<div class = "lead">Temperature:</div>
+			<div class = "lead">Wind Speed:</div>
+			<div class = "lead">Humidity:</div>
+		  </div>
+		</div>
+		<div class="card" id = "day-four">
+			<div class="card-body">
+			  <h5 class="card-title" id = "day-four-date">Date Four</h5>
+			  <p class="card-text">Forcast for Day Four</p>
+			  <div class = "lead">Temperature:</div>
+			  <div class = "lead">Wind Speed:</div>
+			  <div class = "lead">Humidity:</div>
+			</div>
+		  </div>
+		  <div class="card" id = "day-five">
+			<div class="card-body">
+			  <h5 class="card-title" id = "day-five-date">Date Five</h5>
+			  <p class="card-text">Forcast for Day Five</p>
+			  <div class = "lead">Temperature:</div>
+			  <div class = "lead">Wind Speed:</div>
+			  <div class = "lead">Humidity:</div>
+			</div>
+		  </div>
+	  </div>
 
         <!-- JQuery Connection -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
